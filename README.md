@@ -26,7 +26,7 @@ Libraries embedded in Anaconda distribution used in the project:
 For this project, I was interestested in using Stack Overflow data from 2020 to better understand three questions:
 
 1. What are top FIVE hottest programming languages in 2020?
-2. What are the characteristics of people who keep chasing new programming technologies in 2020?
+2. What kind of people would like to keep studying new technologies?
 3. How could Stack Overflow segment their visitors according their behaviours on the platform?
 
 ## File Descriptions <a name="files"></a>
