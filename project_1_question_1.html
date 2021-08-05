@@ -13165,7 +13165,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
@@ -13213,14 +13213,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">HowToBreakIntoTheField</span> <span class="k">as</span> <span class="nn">t</span>
+<span class="kn">import</span> <span class="nn">proj1_func_library</span> <span class="k">as</span> <span class="nn">my_lib</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">scale</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -13241,7 +13241,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;developer_survey_2020/survey_results_public.csv&#39;</span><span class="p">)</span>
@@ -13260,7 +13260,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13277,7 +13277,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -13293,7 +13293,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13409,7 +13409,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_columns&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -13427,7 +13427,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13748,67 +13748,67 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>HTML/CSS;JavaScript;PHP;SQL                                                               1073
-HTML/CSS;JavaScript                                                                        900
-C#;HTML/CSS;JavaScript;SQL                                                                 856
-C#;HTML/CSS;JavaScript;SQL;TypeScript                                                      754
-HTML/CSS;JavaScript;TypeScript                                                             697
-Python                                                                                     651
-Java                                                                                       575
-HTML/CSS;JavaScript;PHP                                                                    525
-C#                                                                                         416
-HTML/CSS;Java;JavaScript;SQL                                                               391
-JavaScript                                                                                 344
-HTML/CSS;JavaScript;Python                                                                 334
-Bash/Shell/PowerShell;C#;HTML/CSS;JavaScript;SQL;TypeScript                                328
-C#;SQL                                                                                     304
-Bash/Shell/PowerShell;HTML/CSS;JavaScript;PHP;SQL                                          280
-HTML/CSS;Java;JavaScript                                                                   280
-HTML/CSS;JavaScript;Python;SQL                                                             267
-HTML/CSS;JavaScript;PHP;SQL;TypeScript                                                     261
-Java;Kotlin                                                                                257
-Python;SQL                                                                                 255
-C#;HTML/CSS;JavaScript                                                                     250
-Java;SQL                                                                                   249
-Bash/Shell/PowerShell;C#;HTML/CSS;JavaScript;SQL                                           247
-HTML/CSS;Java;JavaScript;PHP;SQL                                                           246
-C#;HTML/CSS;JavaScript;TypeScript                                                          237
-HTML/CSS;Java;JavaScript;SQL;TypeScript                                                    232
-HTML/CSS;JavaScript;PHP;Python;SQL                                                         227
-Bash/Shell/PowerShell;Python                                                               224
-C#;HTML/CSS;JavaScript;PHP;SQL                                                             215
-Bash/Shell/PowerShell;HTML/CSS;JavaScript;Python;SQL                                       203
-                                                                                          ... 
-C#;Go;HTML/CSS;Java;JavaScript;Kotlin;Python;SQL;TypeScript                                  1
-Assembly;Bash/Shell/PowerShell;C;C#;C++;Dart;Java;JavaScript;Python                          1
-Assembly;C;C#;C++;SQL;VBA                                                                    1
-Bash/Shell/PowerShell;C;C++;Java;PHP;Python;SQL                                              1
-Bash/Shell/PowerShell;C;HTML/CSS;Java;JavaScript;PHP;Python;Ruby;SQL;TypeScript              1
-Bash/Shell/PowerShell;HTML/CSS;Java;Objective-C;Ruby;SQL;Swift                               1
-C#;Java;JavaScript;PHP;Python;SQL;VBA                                                        1
-Go;HTML/CSS;Java;JavaScript;PHP;Python;Scala                                                 1
-C#;HTML/CSS;JavaScript;Objective-C;PHP;SQL;TypeScript                                        1
-Bash/Shell/PowerShell;C;C#;C++;HTML/CSS;Java;JavaScript;Perl;Python;Swift;VBA                1
-Bash/Shell/PowerShell;C#;C++;HTML/CSS;Java;JavaScript;Python;SQL;Swift                       1
-C;C++;HTML/CSS;Java;JavaScript;Kotlin;Python;Swift;TypeScript                                1
-Bash/Shell/PowerShell;C;C#;Dart;HTML/CSS;Java;JavaScript;PHP;SQL                             1
-Assembly;Bash/Shell/PowerShell;C;C++;Dart;HTML/CSS;Java;Objective-C;Python;SQL               1
-Bash/Shell/PowerShell;Java;JavaScript;Kotlin;PHP;Python;TypeScript                           1
-Go;HTML/CSS;Java;JavaScript;PHP;Python;Ruby;SQL                                              1
-C#;C++;HTML/CSS;Java;Python;Rust;TypeScript                                                  1
-Go;HTML/CSS;Java;Kotlin;Python;Swift;TypeScript                                              1
-Go;HTML/CSS;Java;JavaScript;Python;Scala;SQL;TypeScript                                      1
-Bash/Shell/PowerShell;C;C#;C++;Java;Julia;Perl;PHP;R                                         1
-Objective-C;Python;R;Swift                                                                   1
-HTML/CSS;JavaScript;Objective-C;Perl;PHP;Python;SQL;Swift                                    1
-Bash/Shell/PowerShell;Haskell;HTML/CSS;JavaScript;Python;Rust                                1
-Go;HTML/CSS;JavaScript;PHP;Python;Ruby;SQL                                                   1
-Assembly;C#;C++;Haskell;Python;TypeScript                                                    1
-Assembly;Bash/Shell/PowerShell;C;C#;C++;HTML/CSS;Java;JavaScript;Perl;PHP;Ruby;SQL;VBA       1
-Bash/Shell/PowerShell;C#;HTML/CSS;Java;JavaScript;PHP;R;SQL                                  1
-Bash/Shell/PowerShell;C++;HTML/CSS;JavaScript;Perl;Python;VBA                                1
-C#;C++;Go;JavaScript;TypeScript                                                              1
-Go;Java;JavaScript;Python;R;TypeScript                                                       1
+<pre>HTML/CSS;JavaScript;PHP;SQL                                                                                           1073
+HTML/CSS;JavaScript                                                                                                    900
+C#;HTML/CSS;JavaScript;SQL                                                                                             856
+C#;HTML/CSS;JavaScript;SQL;TypeScript                                                                                  754
+HTML/CSS;JavaScript;TypeScript                                                                                         697
+Python                                                                                                                 651
+Java                                                                                                                   575
+HTML/CSS;JavaScript;PHP                                                                                                525
+C#                                                                                                                     416
+HTML/CSS;Java;JavaScript;SQL                                                                                           391
+JavaScript                                                                                                             344
+HTML/CSS;JavaScript;Python                                                                                             334
+Bash/Shell/PowerShell;C#;HTML/CSS;JavaScript;SQL;TypeScript                                                            328
+C#;SQL                                                                                                                 304
+HTML/CSS;Java;JavaScript                                                                                               280
+Bash/Shell/PowerShell;HTML/CSS;JavaScript;PHP;SQL                                                                      280
+HTML/CSS;JavaScript;Python;SQL                                                                                         267
+HTML/CSS;JavaScript;PHP;SQL;TypeScript                                                                                 261
+Java;Kotlin                                                                                                            257
+Python;SQL                                                                                                             255
+C#;HTML/CSS;JavaScript                                                                                                 250
+Java;SQL                                                                                                               249
+Bash/Shell/PowerShell;C#;HTML/CSS;JavaScript;SQL                                                                       247
+HTML/CSS;Java;JavaScript;PHP;SQL                                                                                       246
+C#;HTML/CSS;JavaScript;TypeScript                                                                                      237
+HTML/CSS;Java;JavaScript;SQL;TypeScript                                                                                232
+HTML/CSS;JavaScript;PHP;Python;SQL                                                                                     227
+Bash/Shell/PowerShell;Python                                                                                           224
+C#;HTML/CSS;JavaScript;PHP;SQL                                                                                         215
+Bash/Shell/PowerShell;HTML/CSS;JavaScript;Python;SQL                                                                   203
+                                                                                                                      ... 
+Bash/Shell/PowerShell;C#;HTML/CSS;Java;JavaScript;PHP;Python;Ruby;Scala;SQL;TypeScript                                   1
+Bash/Shell/PowerShell;HTML/CSS;Java;Python;SQL;Swift                                                                     1
+C;C#;HTML/CSS;Java;JavaScript;PHP;R;SQL;TypeScript                                                                       1
+Bash/Shell/PowerShell;C;Perl;PHP;Ruby;SQL                                                                                1
+Bash/Shell/PowerShell;C;C++;Go;HTML/CSS;Java;JavaScript;Objective-C;Perl;PHP;Python;Ruby;Rust;SQL;Swift;TypeScript       1
+Bash/Shell/PowerShell;C;HTML/CSS;Perl;SQL                                                                                1
+Java;JavaScript;Python;Ruby;Rust;Scala;Swift                                                                             1
+Bash/Shell/PowerShell;Go;HTML/CSS;Java;JavaScript;Python;R;Ruby;SQL;TypeScript                                           1
+C;C#;C++;Dart;HTML/CSS;Java;JavaScript;Kotlin;Perl;PHP;Python;R;Ruby;Rust;Scala;SQL;TypeScript;VBA                       1
+Dart;HTML/CSS;Java;Python                                                                                                1
+Bash/Shell/PowerShell;C;C#;HTML/CSS;Java;JavaScript;PHP;Python;SQL;VBA                                                   1
+Bash/Shell/PowerShell;C#;HTML/CSS;JavaScript;Python;SQL;Swift                                                            1
+Bash/Shell/PowerShell;Go;HTML/CSS;SQL                                                                                    1
+C#;C++;HTML/CSS;JavaScript;PHP;Python;Ruby                                                                               1
+Bash/Shell/PowerShell;Objective-C                                                                                        1
+Go;HTML/CSS;JavaScript;Ruby;Rust;Scala;SQL;TypeScript                                                                    1
+C#;Java;JavaScript;Kotlin;SQL;TypeScript                                                                                 1
+Bash/Shell/PowerShell;Go;Java;JavaScript;Scala;SQL                                                                       1
+Bash/Shell/PowerShell;C#;Go;HTML/CSS;Java;JavaScript;PHP;Python;Rust;SQL                                                 1
+Bash/Shell/PowerShell;Go;HTML/CSS;JavaScript;PHP;SQL;Swift                                                               1
+Assembly;C#;C++;HTML/CSS;PHP;SQL                                                                                         1
+Assembly;Bash/Shell/PowerShell;C#;HTML/CSS;Java;JavaScript;Perl;Python;R;SQL                                             1
+Bash/Shell/PowerShell;Go;HTML/CSS;Java;JavaScript;Kotlin;Python;SQL;Swift;TypeScript                                     1
+Assembly;Bash/Shell/PowerShell;C;Go;JavaScript;Ruby;Rust;SQL;TypeScript                                                  1
+Bash/Shell/PowerShell;C;C++;HTML/CSS;Java;TypeScript                                                                     1
+TypeScript;VBA                                                                                                           1
+C#;Dart;HTML/CSS;Java;JavaScript;Kotlin;Perl;Python;SQL;Swift;TypeScript                                                 1
+C;C#;Java;Kotlin;Python                                                                                                  1
+Bash/Shell/PowerShell;C;C#;C++;Dart;Go;HTML/CSS;JavaScript;Python;Ruby;Rust;SQL;TypeScript;VBA                           1
+Bash/Shell/PowerShell;C;C#;HTML/CSS;JavaScript;PHP;Python;Rust;SQL                                                       1
 Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 </div>
 
@@ -13841,25 +13841,14 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a dictionary</span>
-<span class="n">langWorkedWithDict</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="c1"># Split and count distinct education</span>
-<span class="k">for</span> <span class="n">multipleStr</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;LanguageWorkedWith&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">():</span>
-    <span class="n">arr</span> <span class="o">=</span> <span class="n">multipleStr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
-
-    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
-        <span class="n">key</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">langWorkedWithDict</span><span class="p">:</span>
-          <span class="n">langWorkedWithDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">langWorkedWithDict</span><span class="p">[</span><span class="n">key</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-          <span class="n">langWorkedWithDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">lang_worked_with_dict</span> <span class="o">=</span> <span class="n">my_lib</span><span class="o">.</span><span class="n">conv_multiple_val_to_dict</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;LanguageWorkedWith&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span>
 
 <span class="c1"># Print out the result</span>
-<span class="n">langWorkedWithDict</span>
+<span class="n">lang_worked_with_dict</span>
 </pre></div>
 
     </div>
@@ -13872,7 +13861,7 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13920,13 +13909,13 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">langWorkedWithDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">langWorkedWithDict</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">rename_axis</span><span class="p">(</span><span class="s2">&quot;method&quot;</span><span class="p">)</span>
-<span class="n">langWorkedWithDF</span> <span class="o">=</span> <span class="n">langWorkedWithDF</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lang_worked_with_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">lang_worked_with_dict</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">rename_axis</span><span class="p">(</span><span class="s2">&quot;method&quot;</span><span class="p">)</span>
+<span class="n">lang_worked_with_df</span> <span class="o">=</span> <span class="n">lang_worked_with_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="n">langWorkedWithDF</span>
+<span class="n">lang_worked_with_df</span>
 </pre></div>
 
     </div>
@@ -13939,7 +13928,7 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -14098,10 +14087,10 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">langWorkedWithDF</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lang_worked_with_df</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14114,13 +14103,13 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f9f903d55f8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f263e7e2e48&gt;</pre>
 </div>
 
 </div>
@@ -14143,6 +14132,13 @@ Name: LanguageWorkedWith, Length: 14256, dtype: int64</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="From-the-diagram-above,-we-have-observed-that-&quot;JavaScript&quot;-followed-by-&quot;HTML/CSS&quot;-were-mentioned-by-almost-40,000-respondents,-2/3-people,-as-their-language-which-they-worked-on.-So-&quot;JavaScript&quot;-&amp;-&quot;HTML/CSS&quot;-are-the-number-ONE-and-TWO-of-hottest-language.">From the diagram above, we have observed that "JavaScript" followed by "HTML/CSS" were mentioned by almost 40,000 respondents, 2/3 people, as their language which they worked on. So "JavaScript" &amp; "HTML/CSS" are the number ONE and TWO of hottest language.<a class="anchor-link" href="#From-the-diagram-above,-we-have-observed-that-&quot;JavaScript&quot;-followed-by-&quot;HTML/CSS&quot;-were-mentioned-by-almost-40,000-respondents,-2/3-people,-as-their-language-which-they-worked-on.-So-&quot;JavaScript&quot;-&amp;-&quot;HTML/CSS&quot;-are-the-number-ONE-and-TWO-of-hottest-language.">&#182;</a></h4><h4 id="Secondly,-&quot;SQL&quot;,-&quot;Python&quot;-and-&quot;Java&quot;-follow-by-the-first-two-languages.-They-are-also-hot-languages-because-almost-half-of-respondents-marked-them-as-working-languages.">Secondly, "SQL", "Python" and "Java" follow by the first two languages. They are also hot languages because almost half of respondents marked them as working languages.<a class="anchor-link" href="#Secondly,-&quot;SQL&quot;,-&quot;Python&quot;-and-&quot;Java&quot;-follow-by-the-first-two-languages.-They-are-also-hot-languages-because-almost-half-of-respondents-marked-them-as-working-languages.">&#182;</a></h4><h4 id="Maybe-you-have-noted-that-why-the-total-number-of-respondents-is-over-60,000?-It-is-because-this-variable-contains-multiple-choices.-So-respondents-can-select-more-than-one-option.">Maybe you have noted that why the total number of respondents is over 60,000? It is because this variable contains multiple choices. So respondents can select more than one option.<a class="anchor-link" href="#Maybe-you-have-noted-that-why-the-total-number-of-respondents-is-over-60,000?-It-is-because-this-variable-contains-multiple-choices.-So-respondents-can-select-more-than-one-option.">&#182;</a></h4>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">

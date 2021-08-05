@@ -13220,7 +13220,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">HowToBreakIntoTheField</span> <span class="k">as</span> <span class="nn">t</span>
+<span class="kn">import</span> <span class="nn">proj1_func_library</span> <span class="k">as</span> <span class="nn">my_lib</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">scale</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -13928,13 +13928,13 @@ Length: 61, dtype: float64</pre>
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MainBranch = &quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;MainBranch&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hobbyist = &quot;</span>  <span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;Hobbyist&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Age = &quot;</span>       <span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;Age&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;JobSeek = &quot;</span>   <span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;JobSeek&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NEWOvertime = &quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;NEWOvertime&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NEWLearn = &quot;</span>  <span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;NEWLearn&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LanguageWorkedWith = &quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;LanguageWorkedWith&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;MainBranch&quot;</span><span class="p">)</span>
+<span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;Hobbyist&quot;</span><span class="p">)</span>
+<span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">)</span>
+<span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;JobSeek&quot;</span><span class="p">)</span>
+<span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;NEWOvertime&quot;</span><span class="p">)</span>
+<span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;NEWLearn&quot;</span><span class="p">)</span>
+<span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="s2">&quot;LanguageWorkedWith&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13951,13 +13951,13 @@ Length: 61, dtype: float64</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>MainBranch =  Which of the following options best describes you today? Here, by &#34;developer&#34; we mean &#34;someone who writes code.&#34;
-Hobbyist =  Do you code as a hobby?
-Age =  What is your age (in years)? If you prefer not to answer, you may leave this question blank.
-JobSeek =  Which of the following best describes your current job-seeking status?
-NEWOvertime =  How often do you work overtime or beyond the formal time expectation of your job?
-NEWLearn =  How frequently do you learn a new language or framework?
-LanguageWorkedWith =  Which programming, scripting, and markup languages have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the language and want to continue to do so, please check both boxes in that row.)
+<pre>MainBranch  =  Which of the following options best describes you today? Here, by &#34;developer&#34; we mean &#34;someone who writes code.&#34;
+Hobbyist  =  Do you code as a hobby?
+Age  =  What is your age (in years)? If you prefer not to answer, you may leave this question blank.
+JobSeek  =  Which of the following best describes your current job-seeking status?
+NEWOvertime  =  How often do you work overtime or beyond the formal time expectation of your job?
+NEWLearn  =  How frequently do you learn a new language or framework?
+LanguageWorkedWith  =  Which programming, scripting, and markup languages have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the language and want to continue to do so, please check both boxes in that row.)
 </pre>
 </div>
 </div>
@@ -13990,12 +13990,12 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f11dd728080&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f11dd67e358&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f11dd6395f8&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f11dd5f2668&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f11dd67ef60&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f11dd68feb8&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f651f4259b0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f651f389dd8&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f651f3c2dd8&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f651f37acf8&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f651f32bf98&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f651f32bfd0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -14019,15 +14019,23 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="First,-the-histrogram-of-Age-shows-us-two-things.">First, the histrogram of Age shows us two things.<a class="anchor-link" href="#First,-the-histrogram-of-Age-shows-us-two-things.">&#182;</a></h4><ol>
+<li>Most of respondents are around 30 years old.</li>
+<li>Some instances have 100 years old. Possiblity it contains outliners have to be handled later on.</li>
+</ol>
+<h4 id="Second,-the-value-of-CompTotal-is-very-small.-It-means-most-of-people-don't-have-compensation-so-much.">Second, the value of CompTotal is very small. It means most of people don't have compensation so much.<a class="anchor-link" href="#Second,-the-value-of-CompTotal-is-very-small.-It-means-most-of-people-don't-have-compensation-so-much.">&#182;</a></h4><h4 id="Third,-the-most-population-of-ConvertedComp-is-around-100,000.-It-means-most-of-people-earn-100,000-USD-annually.">Third, the most population of ConvertedComp is around 100,000. It means most of people earn 100,000 USD annually.<a class="anchor-link" href="#Third,-the-most-population-of-ConvertedComp-is-around-100,000.-It-means-most-of-people-earn-100,000-USD-annually.">&#182;</a></h4><h4 id="Fourth,-we-can-ignore-the-population-of-Respondent-because-it-is-the-identity-of-people.">Fourth, we can ignore the population of Respondent because it is the identity of people.<a class="anchor-link" href="#Fourth,-we-can-ignore-the-population-of-Respondent-because-it-is-the-identity-of-people.">&#182;</a></h4><h4 id="Fifth,-the-most-population-of-WorkWeekHrs-is-around-40.-It-means-most-of-people-work-40-hours-per.">Fifth, the most population of WorkWeekHrs is around 40. It means most of people work 40 hours per.<a class="anchor-link" href="#Fifth,-the-most-population-of-WorkWeekHrs-is-around-40.-It-means-most-of-people-work-40-hours-per.">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;JobSeek&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="c1"># Population of JobSeek</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;JobSeek&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc_counts_plot</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="s2">&quot;JobSeek&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14044,22 +14052,9 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Which of the following best describes your current job-seeking status?
+<pre>JobSeek  =  Which of the following best describes your current job-seeking status?
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dd539ba8&gt;</pre>
-</div>
-
 </div>
 
 <div class="output_area">
@@ -14081,15 +14076,19 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Obsviously-half-of-respondent-had-a-stable-job,-but-still-open-to-new-opportunities.--1/3-of-people-seems-very-satified-with-their-current-job-and-not-interested-in-new-job-opportunities-at-all.">Obsviously half of respondent had a stable job, but still open to new opportunities.  1/3 of people seems very satified with their current job and not interested in new job opportunities at all.<a class="anchor-link" href="#Obsviously-half-of-respondent-had-a-stable-job,-but-still-open-to-new-opportunities.--1/3-of-people-seems-very-satified-with-their-current-job-and-not-interested-in-new-job-opportunities-at-all.">&#182;</a></h4><h4 id="Only-fewer-of-1/3-of-people-were-actively-looking-for-a-new-job.">Only fewer of 1/3 of people were actively looking for a new job.<a class="anchor-link" href="#Only-fewer-of-1/3-of-people-were-actively-looking-for-a-new-job.">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;NEWLearn&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="c1"># Population of NEWLearn</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;NEWLearn&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc_counts_plot</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="s2">&quot;NEWLearn&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14106,22 +14105,9 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>How frequently do you learn a new language or framework?
+<pre>NEWLearn  =  How frequently do you learn a new language or framework?
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dd2d1cc0&gt;</pre>
-</div>
-
 </div>
 
 <div class="output_area">
@@ -14143,15 +14129,19 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="The-number-of-respondents-who-learn-new-languages-every-few-months-and-once-a-year-is-totally-40,000.-It-is-over-2/3-of-respondents.">The number of respondents who learn new languages every few months and once a year is totally 40,000. It is over 2/3 of respondents.<a class="anchor-link" href="#The-number-of-respondents-who-learn-new-languages-every-few-months-and-once-a-year-is-totally-40,000.-It-is-over-2/3-of-respondents.">&#182;</a></h4><h4 id="The-rest-of-1/4-respondents-only-learn-new-language-once-every-few-years-or-a-decade.">The rest of 1/4 respondents only learn new language once every few years or a decade.<a class="anchor-link" href="#The-rest-of-1/4-respondents-only-learn-new-language-once-every-few-years-or-a-decade.">&#182;</a></h4><h4 id="This-observation-shows-that-most-of-respondents-keep-learning-new-language-or-framework-frequently.">This observation shows that most of respondents keep learning new language or framework frequently.<a class="anchor-link" href="#This-observation-shows-that-most-of-respondents-keep-learning-new-language-or-framework-frequently.">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hobbyist: &quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">schema</span><span class="p">[</span><span class="n">schema</span><span class="p">[</span><span class="s2">&quot;Column&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;Hobbyist&quot;</span><span class="p">][</span><span class="s2">&quot;QuestionText&quot;</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Population of Hobbyist</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Hobbyist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_lib</span><span class="o">.</span><span class="n">print_var_desc_counts_plot</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="s2">&quot;Hobbyist&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14168,23 +14158,9 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hobbyist:  Do you code as a hobby? 
-
+<pre>Hobbyist  =  Do you code as a hobby?
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dcd89588&gt;</pre>
-</div>
-
 </div>
 
 <div class="output_area">
@@ -14209,6 +14185,13 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Almost-all-of-respondents-who-code-as-their-hobby.-Obsviously-most-IT-geeks-entering-to-IT-fields-for-hobby.">Almost all of respondents who code as their hobby. Obsviously most IT geeks entering to IT fields for hobby.<a class="anchor-link" href="#Almost-all-of-respondents-who-code-as-their-hobby.-Obsviously-most-IT-geeks-entering-to-IT-fields-for-hobby.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Step-3-Data-Preparation">Step 3 Data Preparation<a class="anchor-link" href="#Step-3-Data-Preparation">&#182;</a></h1><p>After the step of data understanding, Involved variables: Age, JobSeek, NEWLearn, Hobbyist</p>
 
 </div>
@@ -14216,11 +14199,11 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;JobSeek&quot;</span><span class="p">,</span> <span class="s2">&quot;NEWLearn&quot;</span><span class="p">,</span> <span class="s2">&quot;Hobbyist&quot;</span><span class="p">]]</span>
-<span class="n">X_processing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_processing</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;JobSeek&quot;</span><span class="p">,</span> <span class="s2">&quot;NEWLearn&quot;</span><span class="p">,</span> <span class="s2">&quot;Hobbyist&quot;</span><span class="p">]]</span>
+<span class="n">x_processing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14233,7 +14216,7 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -14265,35 +14248,35 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
   <tbody>
     <tr>
       <th>0</th>
-      <td>NaN</td>
+      <td>nan</td>
       <td>I am not interested in new job opportunities</td>
       <td>Once a year</td>
       <td>Yes</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>NaN</td>
+      <td>nan</td>
       <td>I am not interested in new job opportunities</td>
       <td>Once a year</td>
       <td>No</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>NaN</td>
+      <td>nan</td>
       <td>NaN</td>
       <td>Once a decade</td>
       <td>Yes</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>25.0</td>
+      <td>25.00</td>
       <td>I’m not actively looking, but I am open to new...</td>
       <td>Once a year</td>
       <td>Yes</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>31.0</td>
+      <td>31.00</td>
       <td>NaN</td>
       <td>Once a year</td>
       <td>Yes</td>
@@ -14311,10 +14294,10 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_processing</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14327,16 +14310,16 @@ LanguageWorkedWith =  Which programming, scripting, and markup languages have yo
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Hobbyist    0.000698
-NEWLearn    0.128838
-JobSeek     0.197546
-Age         0.294985
+<pre>Hobbyist   0.00
+NEWLearn   0.13
+JobSeek    0.20
+Age        0.29
 dtype: float64</pre>
 </div>
 
@@ -14355,10 +14338,10 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of rows (Before dropping): &#39;</span><span class="p">,</span> <span class="n">X_processing</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of rows (Before dropping): &#39;</span><span class="p">,</span> <span class="n">x_processing</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -14393,11 +14376,11 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span> <span class="o">=</span> <span class="n">X_processing</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of rows (Before dropping): &#39;</span><span class="p">,</span> <span class="n">X_processing</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_processing</span> <span class="o">=</span> <span class="n">x_processing</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of rows (Before dropping): &#39;</span><span class="p">,</span> <span class="n">x_processing</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -14447,18 +14430,16 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;JobSeek_ord&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;JobSeek&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-    <span class="p">{</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;I am not interested in new job opportunities&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
         <span class="s2">&quot;I’m not actively looking, but I am open to new opportunities&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
         <span class="s2">&quot;I am actively looking for a job&quot;</span><span class="p">:</span><span class="mi">2</span>
-        
-    <span class="p">}</span>
-<span class="p">)</span> 
-<span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;JobSeek_ord&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span> 
+<span class="p">}</span>
+
+<span class="n">my_lib</span><span class="o">.</span><span class="n">conv_cat_to_ord</span><span class="p">(</span><span class="n">x_processing</span><span class="p">,</span> <span class="s1">&#39;JobSeek&#39;</span><span class="p">,</span> <span class="n">mapping</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14468,19 +14449,6 @@ dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dd3e06d8&gt;</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -14510,19 +14478,17 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;NEWLearn_ord&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;NEWLearn&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-    <span class="p">{</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;Once a decade&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
         <span class="s2">&quot;Once every few years&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
         <span class="s2">&quot;Once a year&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
         <span class="s2">&quot;Every few months&quot;</span><span class="p">:</span><span class="mi">3</span>
-        
-    <span class="p">}</span>
-<span class="p">)</span> 
-<span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;NEWLearn_ord&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span> 
+<span class="p">}</span>
+
+<span class="n">my_lib</span><span class="o">.</span><span class="n">conv_cat_to_ord</span><span class="p">(</span><span class="n">x_processing</span><span class="p">,</span> <span class="s1">&#39;NEWLearn&#39;</span><span class="p">,</span> <span class="n">mapping</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14532,19 +14498,6 @@ dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[18]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dcc81c50&gt;</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -14574,13 +14527,10 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Hobbyist_ord&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Hobbyist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-    <span class="p">{</span><span class="s1">&#39;Yes&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
-<span class="p">)</span> 
-<span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Hobbyist_ord&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_lib</span><span class="o">.</span><span class="n">conv_cat_to_ord</span><span class="p">(</span><span class="n">x_processing</span><span class="p">,</span> <span class="s1">&#39;Hobbyist&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;Yes&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14590,19 +14540,6 @@ dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[19]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dcc2f2b0&gt;</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -14633,12 +14570,12 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5 number summary for Age</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">float_format</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span>
-<span class="n">X_processing</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="n">x_processing</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14651,7 +14588,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -14684,11 +14621,11 @@ Name: Age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">])</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -14701,13 +14638,13 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dcbe0048&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f651effe2e8&gt;</pre>
 </div>
 
 </div>
@@ -14742,15 +14679,15 @@ Name: Age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove all instances with age larger than 60 years old</span>
-<span class="n">X_processing</span> <span class="o">=</span> <span class="n">X_processing</span><span class="p">[</span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">60</span><span class="p">]</span>
+<span class="n">x_processing</span> <span class="o">=</span> <span class="n">x_processing</span><span class="p">[</span><span class="n">x_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">60</span><span class="p">]</span>
 
 <span class="c1"># Show the boxplot again</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">])</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -14763,13 +14700,13 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11da63ea90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f651ef04a90&gt;</pre>
 </div>
 
 </div>
@@ -14803,15 +14740,15 @@ Name: Age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span> <span class="o">=</span> <span class="n">X_processing</span><span class="p">[</span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">51</span><span class="p">]</span>
-<span class="n">X_processing</span> <span class="o">=</span> <span class="n">X_processing</span><span class="p">[</span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_processing</span> <span class="o">=</span> <span class="n">x_processing</span><span class="p">[</span><span class="n">x_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">51</span><span class="p">]</span>
+<span class="n">x_processing</span> <span class="o">=</span> <span class="n">x_processing</span><span class="p">[</span><span class="n">x_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">]</span>
 
 <span class="c1"># Show the boxplot again</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">])</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_processing</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -14824,13 +14761,13 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11dcd41898&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f651e9a0358&gt;</pre>
 </div>
 
 </div>
@@ -14864,10 +14801,10 @@ Name: Age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_processing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_processing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14880,7 +14817,7 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -14991,14 +14928,14 @@ Name: Age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span>
     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;NEWLearn&#39;</span><span class="p">,</span>
     <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;JobSeek&#39;</span><span class="p">,</span> 
-    <span class="n">data</span><span class="o">=</span><span class="n">X_processing</span><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">x_processing</span><span class="p">,</span>
     <span class="n">order</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Once a decade&quot;</span><span class="p">,</span><span class="s2">&quot;Once every few years&quot;</span><span class="p">,</span><span class="s2">&quot;Once a year&quot;</span><span class="p">,</span><span class="s2">&quot;Every few months&quot;</span><span class="p">]</span> <span class="p">)</span>
 </pre></div>
 
@@ -15012,13 +14949,13 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11da58d128&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f651e914278&gt;</pre>
 </div>
 
 </div>
@@ -15045,13 +14982,27 @@ Name: Age, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="First,-there-are-four-groups-of-frequency-of-learning-new-programming-languages,-they-are:">First, there are four groups of frequency of learning new programming languages, they are:<a class="anchor-link" href="#First,-there-are-four-groups-of-frequency-of-learning-new-programming-languages,-they-are:">&#182;</a></h4><ol>
+<li>Once a decade</li>
+<li>Once every few years,</li>
+<li>Once a year,</li>
+<li>Every few months.</li>
+</ol>
+<p>In first three groups, the rate of number of people of job seeking status are the same, even the total numbers of people are different. However, in the last group "Every few months", the number of people who were actively looking for new job is higher. It proves that the people who looking for new job, are willing to learn frequently.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="4.2-NEWLearn-VS-Age">4.2 NEWLearn VS Age<a class="anchor-link" href="#4.2-NEWLearn-VS-Age">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Violin plot</span>
@@ -15059,7 +15010,7 @@ Name: Age, dtype: float64</pre>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span>
     <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> 
     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;NEWLearn&#39;</span><span class="p">,</span>
-    <span class="n">data</span><span class="o">=</span><span class="n">X_processing</span><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">x_processing</span><span class="p">,</span>
     <span class="n">order</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Once a decade&quot;</span><span class="p">,</span><span class="s2">&quot;Once every few years&quot;</span><span class="p">,</span><span class="s2">&quot;Once a year&quot;</span><span class="p">,</span><span class="s2">&quot;Every few months&quot;</span><span class="p">]</span> <span class="p">)</span>
 </pre></div>
 
@@ -15093,16 +15044,23 @@ Name: Age, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="For-the-people-do-not-frequently-learn-new-programming-language,-they-are-generally-order.-And-people-frequently-learn-new-programming-language,-like-every-few-months,-they-are-younger.">For the people do not frequently learn new programming language, they are generally order. And people frequently learn new programming language, like every few months, they are younger.<a class="anchor-link" href="#For-the-people-do-not-frequently-learn-new-programming-language,-they-are-generally-order.-And-people-frequently-learn-new-programming-language,-like-every-few-months,-they-are-younger.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="4.3-NEWLearn-VS-Hobbyist">4.3 NEWLearn VS Hobbyist<a class="anchor-link" href="#4.3-NEWLearn-VS-Hobbyist">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_NEWLearn_Hobbyist</span> <span class="o">=</span> <span class="n">X_processing</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;NEWLearn&#39;</span><span class="p">)[</span><span class="s2">&quot;Hobbyist_ord&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_NEWLearn_Hobbyist</span> <span class="o">=</span> <span class="n">x_processing</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;NEWLearn&#39;</span><span class="p">)[</span><span class="s2">&quot;Hobbyist_ord&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
 <span class="n">df_NEWLearn_Hobbyist</span>
 </pre></div>
 
@@ -15116,7 +15074,7 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[50]:</div>
 
 
 
@@ -15176,7 +15134,7 @@ Name: Age, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_NEWLearn_Hobbyist</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span> 
@@ -15192,13 +15150,13 @@ Name: Age, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f11da1c16a0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f651e87a128&gt;</pre>
 </div>
 
 </div>
@@ -15221,6 +15179,13 @@ Name: Age, dtype: float64</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="For-the-people-do-not-frequently-learn-new-programming-language,-they-do-not-code-as-hobby-so-much.-And-people-frequently-learn-new-programming-language,-like-every-few-months,-most-of-them-code-as-hobby.">For the people do not frequently learn new programming language, they do not code as hobby so much. And people frequently learn new programming language, like every few months, most of them code as hobby.<a class="anchor-link" href="#For-the-people-do-not-frequently-learn-new-programming-language,-they-do-not-code-as-hobby-so-much.-And-people-frequently-learn-new-programming-language,-like-every-few-months,-most-of-them-code-as-hobby.">&#182;</a></h4>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
